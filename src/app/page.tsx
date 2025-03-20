@@ -8,7 +8,7 @@ const Card = lazy(() => import("@/components/Card"));
 const Home = () => {
   const [allPokemons, setAllPokemons] = useState<{ name: string; url: string }[]>([]);
   const [displayedPokemons, setDisplayedPokemons] = useState<{ name: string; url: string }[]>([]);
-  const [search, setSearch] = useState("");
+  const [_search, setSearch] = useState("");
   const [offset, setOffset] = useState(0);
   const [loading, setLoading] = useState(false);
   const [hasMore, setHasMore] = useState(true);
